@@ -1,5 +1,5 @@
 class Player 
-  attr_reader :name, :abbrv, :MAX_LIVES
+  attr_reader :name, :abbrv, :full_lives, :MAX_LIVES
   attr_accessor :lives, :wins
 
   MAX_LIVES = 3
@@ -9,13 +9,14 @@ class Player
     @name = name
     @abbrv = abbrv
     @lives = lives
+    @full_lives = lives
     @wins = 0
-    puts "Player's name is '#{@name}' and has #{@lives} lives" # TEST
+    # puts "Player's name is '#{@name}' and has #{@lives} lives" # TEST
   end
   
   def takes_life
     @lives -= 1
-    puts "player (#{@name}) has now #{@lives} remaining lives" # TEST
+    # puts "player (#{@name}) has now #{@lives} remaining lives" # TEST
   end
 
   def dead?

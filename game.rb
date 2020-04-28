@@ -19,8 +19,8 @@ class Game
 
   def display_turn_status
     # puts "P1: #/3 vs. P2: #/3"
-    puts "-- #{@player1.abbrv}: #{@player1.lives}/#{@player1.MAX_LIVES} \
-    vs.#{@player2.abbrv}: #{@player2.lives}/#{@player2.MAX_LIVES} -- "
+    puts "-- #{@player1.abbrv}: #{@player1.lives}/#{@player1.full_lives} \
+    vs.#{@player2.abbrv}: #{@player2.lives}/#{@player2.full_lives} -- "
   end
 
 
