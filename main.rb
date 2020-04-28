@@ -1,3 +1,5 @@
-require './game'
-require './question'
-require './player'
+require_relative './game'
+
+game1 = Game.new
+
+game1.play
