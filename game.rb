@@ -53,15 +53,20 @@ class Game
       question1.pose_addition_question(@player1.name)
       question1.correct? ? @player1.wins += 1 : @player1.takes_life
 
+      puts 
+
       question2 = Question.new
       question2.pose_addition_question(@player2.name)
       question2.correct? ? @player2.wins += 1 : @player2.takes_life
-
+      
+      puts
       display_turn_status()
+      
+      puts
       next_turn()
             
     end
-    
+    puts 
     display_winner()
     
     
